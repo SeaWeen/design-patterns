@@ -23,5 +23,7 @@ public class MainTest {
 		CashContext context = new CashContext(type);
 		double result = context.getResult(600);
 		System.out.println("实际收费金额："+result);
+		
+		
 	}
 }

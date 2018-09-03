@@ -19,7 +19,7 @@ public class CashContext {
 		default :
 			this.csuper = new CashNormal();
 		}
-		
+		//
 	}
 	
 	public double getResult(double money) {
