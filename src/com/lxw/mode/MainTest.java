@@ -3,14 +3,11 @@ package com.lxw.mode;
 import org.junit.Test;
 
 import com.lxw.mode.decorator.Man;
-import com.lxw.mode.decorator.Person;
 import com.lxw.mode.decorator.SuitDecorator;
 import com.lxw.mode.decorator.TShirtsDecorator;
 import com.lxw.mode.factory.Operation;
 import com.lxw.mode.factory.OperationFactory;
 import com.lxw.mode.strategy.CashContext;
-import com.lxw.mode.strategy.CashNormal;
-import com.lxw.mode.strategy.CashReturn;
 
 public class MainTest {
 
