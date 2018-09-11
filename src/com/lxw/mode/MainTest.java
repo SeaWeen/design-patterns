@@ -1,5 +1,13 @@
 package com.lxw.mode;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+
 import org.junit.Test;
 
 import com.lxw.mode.decorator.Man;
@@ -7,6 +15,9 @@ import com.lxw.mode.decorator.SuitDecorator;
 import com.lxw.mode.decorator.TShirtsDecorator;
 import com.lxw.mode.factory.Operation;
 import com.lxw.mode.factory.OperationFactory;
+import com.lxw.mode.proxy.Image;
+import com.lxw.mode.proxy.ProxyImage;
+import com.lxw.mode.proxy.RealImage;
 import com.lxw.mode.strategy.CashContext;
 
 public class MainTest {
@@ -35,5 +46,24 @@ public class MainTest {
 		tshirt.setComponent(suit);
 		tshirt.show();
 		
+	}
+	
+	@Test
+	public void proxyTest() {
+		Image image = new RealImage();
+		InvocationHandler handler = new ProxyImage(image); 
+		Image proxyImage = (Image) Proxy.newProxyInstance(handler.getClass().getClassLoader(),
+				image.getClass().getInterfaces(), handler);
+		//String name = proxyClass.getName();
+		proxyImage.display();
+	}
+	
+	@Test
+	public void utilTest() {
+		Method[] methods = Image.class.getMethods();
+		for (int i = 0; i < methods.length; i++) {
+			
+			System.out.println(methods[i].getName());
+		}
 	}
 }
