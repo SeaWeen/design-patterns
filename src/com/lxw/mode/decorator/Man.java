@@ -10,7 +10,7 @@ public class Man implements Person{
 
 	@Override
 	public void show() {
-		System.out.println("装扮男人");
+		System.out.println("装扮人");
 	}
 
 }
