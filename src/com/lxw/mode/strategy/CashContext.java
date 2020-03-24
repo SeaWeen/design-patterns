@@ -19,7 +19,8 @@ public class CashContext {
 		default :
 			this.csuper = new CashNormal();
 		}
-		//
+		//master 分支
+        // fe那只
 	}
 	
 	public double getResult(double money) {
