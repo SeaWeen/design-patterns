@@ -28,6 +28,17 @@ public class MainTest {
 		double result = operation.getResult(9, 4);
 		System.out.println(result);
 		//修改bug
+		//dev
+		//dev1
+	}
+	
+	@Test
+	public void newgongneng(){
+		//新功能1
+		//新功能2
+		//新功能3
+		//新功能4
+		//新功能5
 	}
 
 	/**
