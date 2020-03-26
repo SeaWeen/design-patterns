@@ -18,7 +18,7 @@ public class CashContext {
 //			break;
 //		default :
 //			this.csuper = new CashNormal();
-//		}
+//		}修改bug3
 
 
 
