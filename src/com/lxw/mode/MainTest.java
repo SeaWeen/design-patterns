@@ -79,6 +79,7 @@ public class MainTest {
 		Image proxyImage = (Image) Proxy.newProxyInstance(handler.getClass().getClassLoader(),
 				image.getClass().getInterfaces(), handler);
 		proxyImage.display();
+		//bug2
 	}
 
 	/**
