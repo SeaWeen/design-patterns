@@ -65,6 +65,7 @@ public class MainTest {
 		suit.setComponent(concreteComponent);
 		tshirt.setComponent(suit);
 		tshirt.show();
+		//bug
 
 	}
 
