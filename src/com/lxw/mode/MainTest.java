@@ -27,6 +27,7 @@ public class MainTest {
 		Operation operation = OperationFactory.createOperation("%");
 		double result = operation.getResult(9, 4);
 		System.out.println(result);
+		//修改bug
 	}
 
 	/**
