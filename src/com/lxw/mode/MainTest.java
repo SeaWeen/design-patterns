@@ -100,7 +100,7 @@ public class MainTest {
 		long time = endTime - startTime;
 		// list = list.stream().distinct().collect(Collectors.toList());
 		System.out.println("耗时：" + time + "毫秒");
-
+		//bug3
 	}
 	
 	@Test
