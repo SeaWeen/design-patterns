@@ -30,6 +30,7 @@ public class MainTest {
 		//修改bug
 		//dev
 		//dev1
+		//dev2
 	}
 	
 	@Test
@@ -38,7 +39,7 @@ public class MainTest {
 		//新功能2
 		//新功能3
 		//新功能4
-		//新功能5
+		
 	}
 
 	/**
