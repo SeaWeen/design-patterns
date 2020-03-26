@@ -30,7 +30,8 @@ public class MainTest {
 		//dev
 		//dev1
 		//dev2
-		//工厂新功能
+		//修复工厂bug1
+		//工厂新功能	
 	}
 	
 	@Test
