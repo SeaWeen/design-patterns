@@ -30,6 +30,7 @@ public class MainTest {
 		//dev
 		//dev1
 		//dev2
+		//修复工厂bug
 	}
 	
 	@Test
