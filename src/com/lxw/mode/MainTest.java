@@ -27,6 +27,19 @@ public class MainTest {
 		Operation operation = OperationFactory.createOperation("%");
 		double result = operation.getResult(9, 4);
 		System.out.println(result);
+		//dev
+		//dev1
+		//dev2
+		//修复工厂bug1
+		//工厂新功能	
+	}
+	
+	@Test
+	public void newgongneng(){
+		//新功能1
+		//新功能2
+		//新功能3
+		//新功能4
 		//修改bug
 		//修改bug2
 		//修改bug3
@@ -54,6 +67,7 @@ public class MainTest {
 		suit.setComponent(concreteComponent);
 		tshirt.setComponent(suit);
 		tshirt.show();
+		//bug
 
 	}
 
@@ -67,6 +81,7 @@ public class MainTest {
 		Image proxyImage = (Image) Proxy.newProxyInstance(handler.getClass().getClassLoader(),
 				image.getClass().getInterfaces(), handler);
 		proxyImage.display();
+		//bug2
 	}
 
 	/**
@@ -88,7 +103,7 @@ public class MainTest {
 		long time = endTime - startTime;
 		// list = list.stream().distinct().collect(Collectors.toList());
 		System.out.println("耗时：" + time + "毫秒");
-
+		//bug3
 	}
 	
 	@Test
